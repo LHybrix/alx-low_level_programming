@@ -2,8 +2,9 @@
 
 /**
  * main - Entry point
- * Description: Fuck Betty
- *
+ * Description: "Fuck Betty"
+ * 
+ * Return: Always 0 (Success)
  */
 
 int main(void)
