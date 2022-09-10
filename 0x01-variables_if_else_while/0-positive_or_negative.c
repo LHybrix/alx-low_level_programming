@@ -6,8 +6,8 @@
 /* betty style doc for function main goes there */
 /**
  * main - entry
- * Description: print
- * return: 0
+ * Description: "print"
+ * Return: 0
  */
 int main(void)
 {
