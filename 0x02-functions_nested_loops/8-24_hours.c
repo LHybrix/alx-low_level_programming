@@ -2,66 +2,30 @@
 
 /**
  * jack_bauer - myfunc
- * Description: Print fuck all
- * Return: hmm
+ * Description: hmm
+ * Returen: hmm
  */
 
 void jack_bauer(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int h, m;
 
-	for (i = 0; i <= 2; i++)
+	for (h = 0; h < 24; h++)
 	{
-		_putchar(i + '0');
-		if (i != 2)
-		{
-			for (j = 0; j <= 9; j++)
-			{
-				_putchar(j + '0');
-				_putchar(':');
-				for (k = 0; k <= 6; k++)
-				{
-					_putchar(k + '0');
-					if (k != 6)
-					{
-						for (l = 0; l <= 9; l++)
-						{
-							_putchar(l + '0');
-						}
-					}
-					else
-					{
-						_putchar('0');
-					}
-				}
-			}
-		}
-		else
-		{
-			for (j = 0; j <= 3; j++)
-			{
-				_putchar(j + '0');
-				_putchar(':');
-				for (k = 0; k <= 6; k++)
-				{
-					_putchar(k + '0');
-					if (k != 6)
-					{
-						for (l = 0; l <= 9; l++)
-						{
-							_putchar(l + '0');
-						}
-					}
-					else
-					{
-						_putchar('0');
-					}
-				}
-			}
-		}
+		int hl = h % 10;
+		int hf = h / 10;
 
-	}
+		for (m = 0; m < 60; m++)
+		{
+			int ml = m % 10;
+			int mf = m / 10;
+
+			_putchar(hf + '0');
+			_putchar(hl + '0');
+			_putchar(':');
+			_putchar(mf + '0');
+			_putchar(ml + '0');
+			_putchar('\n');
+		}
+	}	
 }
