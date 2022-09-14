@@ -13,18 +13,17 @@ void times_table(void)
 
 	for (num = 0; num < 10; num++)
 	{
-		for (num2 = 0; num < 10; num++)
+		for (num2 = 0; num2 < 10; num2++)
 		{
 			int r = num * num2;
-				if (r == 0)
+				if (r < 10)
 				{
-					_putchar(r + '0');
-				}
-				else if (r < 10)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					if (num2 != 0)
+					{
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+					}
 					_putchar(r + '0');
 				}
 				else
