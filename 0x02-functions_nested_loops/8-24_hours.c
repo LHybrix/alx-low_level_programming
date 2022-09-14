@@ -30,13 +30,11 @@ void jack_bauer(void)
 						for (l = 0; l <= 9; l++)
 						{
 							_putchar(l + '0');
-							_putchar('\n');
 						}
 					}
 					else
 					{
 						_putchar('0');
-						_putchar('\n');
 					}
 				}
 			}
@@ -55,13 +53,11 @@ void jack_bauer(void)
 						for (l = 0; l <= 9; l++)
 						{
 							_putchar(l + '0');
-							_putchar('\n');
 						}
 					}
 					else
 					{
 						_putchar('0');
-						_putchar('\n');
 					}
 				}
 			}
