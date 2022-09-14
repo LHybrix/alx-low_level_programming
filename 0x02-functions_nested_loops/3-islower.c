@@ -15,22 +15,6 @@ int _islower(int c)
 	{
 		return (1);
 	}
-	else
-	{
-		return (0);
-	}
+
 	return (0);
-}
-
-/**
- * _putchar - myfunc
- * @r: fior
- * Description: mini main
- * Return: r
- */
-
-char _putchar(char r)
-{
-	putchar(r);
-	return (r);
 }
