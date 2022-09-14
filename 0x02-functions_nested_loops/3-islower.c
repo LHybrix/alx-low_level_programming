@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "main.h"
+int _islower(int c);
 
 /**
-  * _islower - entry
+  * _islower - myfunc
   * @c: fior
   * Description: checks for lower case
   * Return: 0
