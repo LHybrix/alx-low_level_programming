@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * _islower - entry
- * Description: checks for lower case
- * Return: int
- */
+  * _islower - entry
+  * @c: fior
+  * Description: checks for lower case
+  * Return: 0
+  */
 
 int _islower(int c)
 {
-	c = 32;
 	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
