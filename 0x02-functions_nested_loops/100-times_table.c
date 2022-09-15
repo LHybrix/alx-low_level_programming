@@ -18,6 +18,7 @@ void print_times_table(int n)
 		for (num2 = 0; num2 <= n; num2++)
 		{
 			int r = num * num2;
+
 			if (r < 10)
 			{
 				if (num2 != 0)
