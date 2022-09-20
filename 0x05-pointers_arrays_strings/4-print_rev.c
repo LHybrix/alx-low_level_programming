@@ -9,18 +9,14 @@
 
 void print_rev(char *s)
 {
-	int l = 0;
-	int *lp = &l;
-	int lnIndex = *lp - 1;
-	int lnIndexP = *(s + lnIndex);
+	char *l = s;
 
 	for (; *s != '\0'; s++)
+	;
+	s--;
+	while (s >= l)
 	{
-		*lp = l + 1;
-	}
-	while (lnIndexP >= *s)
-	{
-		_putchar(lnIndexP);
-		lnIndexP--;
+		putchar(*s);
+		s--;
 	}
 }
