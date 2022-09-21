@@ -11,6 +11,7 @@ void rev_string(char *s)
 {
 	int le = 0;
 	char ph[100];
+	char *php = ph;
 	int i, j;
 
 	for (; *s != '\0'; s++)
@@ -18,13 +19,13 @@ void rev_string(char *s)
 	le++;
 	}
 
-	i = 0;
-	j = le - 1;
-
-	for (; i < le; i++, j--)
+	for (i = 0, j = le - 1; i < le; i++, j--)
 	{
 		ph[i] = s[j];
 	}
 
-	s = ph;
+	for (i = 0; *php != '\0'; php++, i++)
+	{
+		s[i] = *php;
+	}
 }
