@@ -9,23 +9,18 @@
 
 void rev_string(char *s)
 {
-	int le = 0;
-	char ph[100];
-	char *php = ph;
-	int i, j;
+	int i, c, l;
+	char h;
 
-	for (; *s != '\0'; s++)
-	{
-	le++;
-	}
+	for (i = 0; s[i] != '\0'; i++)
+		;
 
-	for (i = 0, j = le - 1; i < le; i++, j--)
-	{
-		ph[i] = s[j];
-	}
+	l = i;
 
-	for (i = 0; *php != '\0'; php++, i++)
+	for (i--, c = 0; c < l / 2; i--, c++)
 	{
-		s[i] = *php;
+		h = s[c];
+		s[c] = s[i];
+		s[i] = h;
 	}
 }
